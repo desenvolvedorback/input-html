@@ -1,0 +1,184 @@
+/* Reset básico e tipografia */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+header {
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #007bff;
+}
+
+header p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Agrupamentos */
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 25px;
+  background-color: #fafafa;
+}
+
+legend {
+  font-weight: bold;
+  color: #007bff;
+  padding: 0 10px;
+  font-size: 1.1rem;
+}
+
+.field-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+/* Estilização dos Inputs e Controles */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="search"],
+input[type="number"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="time"],
+input[type="month"],
+input[type="week"],
+select,
+textarea {
+  width: 100;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+/* Modificadores para estados específicos */
+input[disabled] {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+input[readonly] {
+  background-color: #f8f9fa;
+}
+
+/* Campos inline (Radio e Checkbox) */
+.inline-options {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.inline-options label {
+  font-weight: normal;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Seletor de Cor */
+input[type="color"] {
+  height: 40px;
+  width: 80px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Envio de Arquivo */
+input[type="file"] {
+  border: none;
+  background: none;
+}
+
+/* Botões */
+.button-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+input[type="submit"] {
+  background-color: #28a745;
+  color: #fff;
+}
+
+input[type="submit"]:hover {
+  background-color: #218838;
+}
+
+input[type="reset"] {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+input[type="reset"]:hover {
+  background-color: #c82333;
+}
+
+input[type="button"] {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+input[type="button"]:hover {
+  background-color: #5a6268;
+}
